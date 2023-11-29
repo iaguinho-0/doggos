@@ -125,3 +125,31 @@ input:checked+.slider::before {
 input:checked+.slider:before {
   transform: translateX(1.9em);
 }
+
+.main__sobre-nos{
+  background-color: #FFFBF5;
+  display: flex;
+  gap: 64px;
+  padding: 334px;
+}
+
+.main__sobre-nos__txt{
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.h1__sobre-nos{
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.p__sobre-nos{
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  width: 744px;
+  height: 283px;
+}
