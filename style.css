@@ -16,6 +16,7 @@
 
 body {
   overflow-x: hidden;
+  background: var(--light-bg);
 }
 
 p {
@@ -62,7 +63,7 @@ h1 {
   border-bottom: 3px solid var(--dark-text-colors);
 }
 
-.switch {
+.button-switch {
   font-size: 17px;
   position: relative;
   display: inline-block;
@@ -70,7 +71,7 @@ h1 {
   height: 1.8em;
 }
 
-.switch input {
+.button-switch input {
   display: none;
   opacity: 0;
   width: 0;
@@ -87,6 +88,7 @@ h1 {
   background-color: #00000050;
   transition: .2s;
   border-radius: 30px;
+  box-shadow: inset 0px 0px 10px 0px #00000070;
 }
 
 .slider:before {
@@ -98,15 +100,15 @@ h1 {
   left: 0.2em;
   bottom: 0.2em;
   background-color: var(--light-primary-colors);
+  background-image: url(./assets/sun.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   transition: .4s;
 }
 
 input:checked+.slider::before {
   background-color: var(--dark-primary-colors);
-}
-
-input:checked+.slider {
-  background-color: #00000050;
+  background-image: url(./assets/moon.svg);
 }
 
 input:checked+.slider:before {
