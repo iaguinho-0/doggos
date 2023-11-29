@@ -27,6 +27,16 @@ h1 {
   font-family: 'Cabin', sans-serif;
 }
 
+.carousel-inner {
+  background-color: var(--light-secondary-colors);
+  padding-top: 64px;
+}
+
+.carousel-item img {
+  height: 512px;
+  width: 1920px !important;
+}
+
 .max-w {
   width: 100%;
   max-width: 1366px;
@@ -40,6 +50,7 @@ h1 {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 50;
   background-color: var(--light-primary-colors);
 }
 
