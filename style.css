@@ -192,3 +192,36 @@ input:checked+.slider:before {
   flex-direction: row;
   gap: 64px;
 }
+
+.divider{
+  width: 100%;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-secondary-colors);
+
+}
+
+.divider div{
+  display: flex;
+  align-items: center;
+}
+
+.divider-content{
+  
+  gap: 4.270833333333333vw; /* Eu */
+  
+}
+
+.dog-img{
+  margin:0 4.270833333333333vw; /* Eu */
+  justify-content: space-between;
+}
+
+
+.linha {
+  width: 13.229166666666666vw; /* Eu */
+  border-bottom: 2px solid #ffffff;
+}
+
