@@ -137,10 +137,13 @@ input:checked+.slider:before {
   justify-content: center;
 }
 
+
+/*  */
 .main {
   background-color: var(--light-bg);
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -167,4 +170,25 @@ input:checked+.slider:before {
   text-align: justify;
   width: 744px;
   height: 283px;
+}
+
+.main__fareje{
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--light-bg);
+}
+
+.main__fareje h1{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  
+  color:#000000;
+
+}
+
+.main__fareje-content{
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
 }
