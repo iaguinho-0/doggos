@@ -391,6 +391,139 @@ input:checked+.slider:before {
   .top-bar label {
     display: none;
   }
+<<<<<<< HEAD
+}
+
+
+/* Footer de iago.com */
+
+footer{
+  background-color: #CC9AE8;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape{
+  display: flex;
+  flex-direction: row;
+}
+
+.cotato-info{
+  width: 100%;
+  margin-left: 80px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.cotato-info h2{
+  font-size: 16px;
+}
+
+.cotato-info img{
+  margin-bottom: 8px;
+}
+
+.formulario{
+  width: 100%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario h1{
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  padding: 0;
+}
+
+.formulario input, .formulario textarea{
+  width: 550px;
+  border-radius: 3px;
+  background: #EDF5F4;
+  box-shadow: 0px -1px 0px 0px #484747 inset;
+}
+
+form{
+  max-width: 700px;
+  margin: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea{
+  display: flex;
+  width: 620px;
+  padding: 12px 222px 13px 12px;
+  align-items: center;
+
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  color: #242424da;
+  font-size: 13px;
+}
+
+form textarea{
+  resize: none;
+  max-height: 420px;
+}
+
+form .botao-enviar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+form .botao-enviar input{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  width: 128px;
+  height: 31.688px;
+  padding: 6px 39px 6.688px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: .2s;
+
+ border-radius: 2px;
+ background: #52057B;
+ box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+div h3{
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.cotato-info h2{
+  margin: 24px 0px 12px 0px;
+  color: #FFF;
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cotato-info h2 img{
+  margin-right: 10px;
+}
+
+
+
+=======
 
   .main__sobre-nos {
     display: flex;
@@ -398,3 +531,4 @@ input:checked+.slider:before {
     gap: 64px;
   }
 }
+>>>>>>> 330c6867efd62509071346188d61d41af70d33fb
