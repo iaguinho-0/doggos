@@ -258,6 +258,8 @@ input:checked+.slider:before {
 .main__sobre-nos {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
   gap: 64px;
 }
@@ -278,6 +280,11 @@ input:checked+.slider:before {
 .main__sobre-nos__txt h1 {
   font-weight: bold;
   font-size: 40px;
+  margin: 0%;
+}
+
+.sn-mobile{
+  display: none;
 }
 
 .main__sobre-nos__txt p {
@@ -391,6 +398,46 @@ input:checked+.slider:before {
   .top-bar label {
     display: none;
   }
+
+  .main__sobre-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 64px;
+  }
+
+  .main__sobre-nos__txt h1{
+    display: none;
+  }
+
+  .sn-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+  }
+  
+  .sn-img-desk{
+    display: none;
+  }
+
+  .sn-mobile-title{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sn-mobile-title h1{
+    margin: 0%;
+    font-weight: bold;
+  }
+
+  .claw-sn{
+    width: 50%;
+    height: 50%;
+  }
+
 }
 
 
