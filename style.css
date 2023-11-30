@@ -33,6 +33,10 @@ a {
   color: var(--dark-text-colors) !important;
 }
 
+.carousel {
+  margin-top: 64px;
+}
+
 .carousel-inner {
   background-color: var(--light-secondary-colors);
 }
@@ -63,6 +67,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 0;
   position: fixed;
   z-index: 50;
   background-color: var(--light-primary-colors);
@@ -234,7 +239,7 @@ input:checked+.slider:before {
 
   color: #000000;
 
-  
+
   padding-bottom: 64px;
 }
 
@@ -245,16 +250,16 @@ input:checked+.slider:before {
   gap: 64px;
 }
 
-.main__fareje-content___maps{
+.main__fareje-content___maps {
   width: 30.975348338692392vw;
   height: 23.375rem;
 }
 
-.main__fareje-content__right img{
-  height:16.563rem;
+.main__fareje-content__right img {
+  height: 16.563rem;
 }
 
-.main__fareje-content__right p{
+.main__fareje-content__right p {
   font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -262,7 +267,7 @@ input:checked+.slider:before {
   margin: 0px 0px 0px;
 }
 
-.main__fareje-content__right p strong{
+.main__fareje-content__right p strong {
   font-weight: bold;
 }
 
@@ -284,7 +289,7 @@ input:checked+.slider:before {
 .divider-content {
 
   gap: 4.270833333333333vw;
-  
+
 
 }
 
@@ -294,12 +299,12 @@ input:checked+.slider:before {
 
 }
 
-.Jumpdog-img{
+.Jumpdog-img {
   height: 203px;
 }
 
 
-.patinha-img{
+.patinha-img {
   height: 4rem;
 }
 

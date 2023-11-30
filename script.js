@@ -1,13 +1,26 @@
 $('.carousel').carousel()
 
+//SideBar
+
+var checkSideBar;
+
 function showSideBar() {
-  let statusbar = document.getElementsByClassName("side-bar");
-  console.log(statusbar)
-  if (statusbar[0].className.valueOf("show-sidebar")) {
-    statusbar[0].className = statusbar[0].className.replace("", "show-sidebar ")
-    console.log("On")
-  } else {
+  statusbar = document.getElementsByClassName("side-bar");
+  if (statusbar[0].className.includes("show-sidebar")) {
     statusbar[0].className = statusbar[0].className.replace("show-sidebar", "")
-    console.log("Off")
+    checkSideBar = false
+  } else {
+    statusbar[0].className = statusbar[0].className.replace("", "show-sidebar ")
+    checkSideBar = true
   }
 }
+
+window.addEventListener('resize', function () {
+  var largura = window.innerWidth;
+
+  if (largura > 768 && checkSideBar) {
+    showSideBar()
+  }
+});
+
+//SideBar
