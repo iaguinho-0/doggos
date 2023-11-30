@@ -242,14 +242,14 @@ input:checked+.slider:before {
   justify-content: center;
 }
 
-.main__sobre-nos{
+.main__sobre-nos {
   display: flex;
   flex-direction: row;
   position: relative;
   gap: 64px;
 }
 
-.main__sobre-nos img{
+.main__sobre-nos img {
   width: 50%;
   height: 50%;
 }
@@ -379,7 +379,7 @@ input:checked+.slider:before {
     display: none;
   }
 
-  .main__sobre-nos{
+  .main__sobre-nos {
     display: flex;
     flex-direction: column;
     gap: 64px;
