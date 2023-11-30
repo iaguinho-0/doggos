@@ -387,77 +387,6 @@ input:checked+.slider:before {
   border-bottom: 2px solid #ffffff;
 }
 
-/* Media Query Mobile */
-
-@media (max-width: 768px) {
-  .top-bar button {
-    display: block;
-  }
-
-  .top-bar ul,
-  .top-bar label {
-    display: none;
-  }
-
-  .main__sobre-nos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 64px;
-  }
-
-  .main__sobre-nos__txt h1{
-    display: none;
-  }
-
-  .sn-mobile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13px;
-  }
-  
-  .sn-img-desk{
-    display: none;
-  }
-
-  .sn-mobile-title{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sn-mobile-title h1{
-    margin: 0%;
-    font-weight: bold;
-  }
-
-  .claw-sn{
-    width: 50%;
-    height: 50%;
-  }
-
-  .main__fareje-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .main__fareje-content___maps{
-    width: 90.975348338692392vw;
-    height: 23.375rem;
-  }
-  
-  .main_faixada{
-    display: none;
-  }
-
-}
-
-
 /* Footer de iago.com */
 
 footer {
@@ -589,4 +518,77 @@ div h3 {
   margin: 0;
   padding: 0;
 }
+/* Footer de iago.com */
+
+/* Media Query Mobile */
+
+@media (max-width: 768px) {
+  .top-bar button {
+    display: block;
+  }
+
+  .top-bar ul,
+  .top-bar label {
+    display: none;
+  }
+
+  .main__sobre-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 64px;
+  }
+
+  .main__sobre-nos__txt h1{
+    display: none;
+  }
+
+  .sn-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+  }
+  
+  .sn-img-desk{
+    display: none;
+  }
+
+  .sn-mobile-title{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sn-mobile-title h1{
+    margin: 0%;
+    font-weight: bold;
+  }
+
+  .claw-sn{
+    width: 50%;
+    height: 50%;
+  }
+
+  .main__fareje-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .main__fareje-content___maps{
+    width: 90.975348338692392vw;
+    height: 23.375rem;
+  }
+  
+  .main_faixada{
+    display: none;
+  }
+
+}
+
+
 
