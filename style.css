@@ -206,20 +206,49 @@ input:checked+.slider:before {
   flex-direction: column;
 
   background-color: var(--light-bg);
+
+  padding-top: 128px;
+  padding-bottom: 87px;
+  margin-bottom: 0%;
 }
 
 .main__fareje h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  text-align: center;
 
   color: #000000;
 
+  
+  padding-bottom: 64px;
 }
 
 .main__fareje-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 64px;
+}
+
+.main__fareje-content___maps{
+  width: 30.975348338692392vw;
+  height:  40.91903719912472vh;
+}
+
+.main__fareje-content__right img{
+
+}
+
+.main__fareje-content__right p{
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 0px 0px 0px;
+}
+
+.main__fareje-content__right p strong{
+  font-weight: bold;
 }
 
 .divider {
