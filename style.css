@@ -457,9 +457,8 @@ footer {
 
 .cotato-info {
   width: 100%;
-  margin-left: 80px;
   display: flex;
-
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -468,12 +467,31 @@ footer {
 }
 
 .cotato-info img {
-  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
+.logo{
+  margin-bottom: 20px;
+}
+
+.cotato-info h2 {
+  margin: 19px 0;
+  color: #FFF;
+  font-family: Cabin;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.cotato-info h2 img {
+  display: inline-block;
 }
 
 .formulario {
   width: 100%;
-  padding: 40px 30px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -543,7 +561,7 @@ form .botao-enviar input {
 
   border-radius: 2px;
   background: #52057B;
-  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 div h3 {
@@ -555,16 +573,3 @@ div h3 {
   padding: 0;
 }
 
-.cotato-info h2 {
-  margin: 24px 0px 12px 0px;
-  color: #FFF;
-  font-family: Cabin;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.cotato-info h2 img {
-  margin-right: 10px;
-}
