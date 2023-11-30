@@ -214,28 +214,37 @@ input:checked+.slider:before {
   justify-content: center;
 }
 
-.main__sobre-nos {
+.main__sobre-nos{
   display: flex;
+  flex-direction: row;
+  position: relative;
   gap: 64px;
+}
+
+.main__sobre-nos img{
+  width: 50%;
+  height: 50%;
 }
 
 .main__sobre-nos__txt {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
   gap: 31px;
 }
 
-.h1__sobre-nos {
+.main__sobre-nos__txt h1 {
   font-weight: bold;
   font-size: 40px;
 }
 
-.p__sobre-nos {
+.main__sobre-nos__txt p {
   font-size: 20px;
   font-weight: normal;
   text-align: justify;
-  width: 744px;
-  height: 283px;
+  max-width: 100%;
+  margin: 0%;
 }
 
 .main__fareje {
@@ -330,6 +339,8 @@ input:checked+.slider:before {
   border-bottom: 2px solid #ffffff;
 }
 
+/* Media Query Mobile */
+
 @media (max-width: 768px) {
   .top-bar button {
     display: block;
@@ -338,5 +349,11 @@ input:checked+.slider:before {
   .top-bar ul,
   .top-bar label {
     display: none;
+  }
+
+  .main__sobre-nos{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
   }
 }
