@@ -284,20 +284,27 @@ input:checked+.slider:before {
 .divider-content {
 
   gap: 4.270833333333333vw;
-  /* Eu */
+  
 
 }
 
-.dog-img {
+.Jumpdog-div {
   margin: 0 4.270833333333333vw;
-  /* Eu */
-  justify-content: space-between;
+  padding-left: 1rem;
+
 }
 
+.Jumpdog-img{
+  height: 203px;
+}
+
+
+.patinha-img{
+  height: 4rem;
+}
 
 .linha {
   width: 13.229166666666666vw;
-  /* Eu */
   border-bottom: 2px solid #ffffff;
 }
 
