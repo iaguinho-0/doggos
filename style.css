@@ -156,6 +156,19 @@ a {
   background-color: var(--light-primary-colors);
 }
 
+.w-sb a {
+  width: 100% !important;
+  height: 70px !important;
+  display: flex;
+  border: #000000;
+}
+
+.w-sb a p,
+.w-sb a img {
+  height: 20px;
+  margin: 24px 0px 24px 24px;
+}
+
 button:focus {
   outline: none !important;
 }
