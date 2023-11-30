@@ -33,6 +33,34 @@ a {
   color: var(--dark-text-colors) !important;
 }
 
+
+/* sobrenozes */
+.sn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-sn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-sn img {}
+
+.content-sn h1,
+.content-sn p {}
+
+.content-sn div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* sobrenozes */
+
 .carousel {
   margin-top: 64px;
 }
