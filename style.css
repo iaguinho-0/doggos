@@ -438,6 +438,23 @@ input:checked+.slider:before {
     height: 50%;
   }
 
+  .main__fareje-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .main__fareje-content___maps{
+    width: 90.975348338692392vw;
+    height: 23.375rem;
+  }
+  
+  .main_faixada{
+    display: none;
+  }
+
 }
 
 
