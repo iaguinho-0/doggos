@@ -247,11 +247,11 @@ input:checked+.slider:before {
 
 .main__fareje-content___maps{
   width: 30.975348338692392vw;
-  height:  40.91903719912472vh;
+  height: 23.375rem;
 }
 
 .main__fareje-content__right img{
-
+  height:16.563rem;
 }
 
 .main__fareje-content__right p{
