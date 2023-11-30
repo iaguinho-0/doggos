@@ -55,6 +55,23 @@ a {
   bottom: 0;
 }
 
+.carousel-indicators .active {
+  background: var(--light-primary-colors) !important;
+}
+
+.dots {
+  background: var(--light-text-colors) !important;
+  width: 8px !important;
+  height: 8px !important;
+  margin-right: 18px !important;
+  margin-left: 18px !important;
+  border-radius: 999px;
+}
+
+.carousel-indicators {
+  bottom: -36px !important;
+}
+
 .max-w {
   width: 100%;
   max-width: 1366px;

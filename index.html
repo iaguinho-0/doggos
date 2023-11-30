@@ -33,7 +33,7 @@
         <li><a href="#farejenos">Fareje-nos</a></li>
       </ul>
       <label class="button-switch">
-        <input type="checkbox">
+        <input type="checkbox" onclick="console.log('clicado')">
         <span class="slider"></span>
       </label>
       <button><img src="./assets/menu-icon.svg" alt="button-sidebar" onclick="showSideBar()"></button>
@@ -47,9 +47,9 @@
   <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="dots active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="dots"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="dots"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -73,7 +73,7 @@
     </div>
   </section>
   <main class="main">
-    <!-- <section class="main__sobre-nos max-w">
+    <section class="main__sobre-nos max-w">
       <img src="./assets/cachorro-fundoroxo.png" alt="cachorro, fundo roxo">
       <div class="main__sobre-nos__txt">
         <h1 class="h1__sobre-nos">SOBRE NÓS</h1>
@@ -87,7 +87,7 @@
           that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
           making it look like readable English.</p>
       </div>
-    </section> -->
+    </section>
 
     <!-- Divider -->
     <div class="divider">
