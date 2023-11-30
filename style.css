@@ -394,6 +394,7 @@ footer {
   display: flex !important;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .rodape {
@@ -587,6 +588,27 @@ div h3 {
   .main_faixada{
     display: none;
   }
+
+    /* FOOOTER*/
+    .rodape {
+      display: flex;
+      flex-direction:column-reverse;
+    }
+  
+    .cotato-info h2 img {
+      display: inline-block;
+    }
+  
+    
+  
+  .cotato-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+    }
+  
+   /* FOOOTER*/
 
 }
 
