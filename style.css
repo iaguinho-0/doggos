@@ -65,6 +65,12 @@ a {
   margin-top: 64px;
 }
 
+#sobrenos,
+#servicos,
+#farejenos {
+  margin: 128px 0;
+}
+
 .carousel-inner {
   background-color: var(--light-secondary-colors);
 }
@@ -103,7 +109,7 @@ a {
 .max-w {
   width: 100%;
   max-width: 1366px;
-  padding: 64px;
+  padding: 0 64px;
 }
 
 .top-bar {
@@ -283,7 +289,7 @@ input:checked+.slider:before {
   margin: 0%;
 }
 
-.sn-mobile{
+.sn-mobile {
   display: none;
 }
 
@@ -297,13 +303,11 @@ input:checked+.slider:before {
 
 .main__fareje {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-  background-color: var(--light-bg);
-
-  padding-top: 128px;
-  padding-bottom: 87px;
-  margin-bottom: 0%;
+  background-color: var(--light-bg)
 }
 
 .main__fareje h1 {
@@ -317,20 +321,21 @@ input:checked+.slider:before {
   padding-bottom: 64px;
 }
 
-.main__fareje-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 64px;
+.main__fareje-content___maps {
+  min-width: 50%;
+  border: none;
 }
 
-.main__fareje-content___maps {
-  width: 30.975348338692392vw;
-  height: 23.375rem;
+.main__fareje-content__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px
 }
 
 .main__fareje-content__right img {
-  height: 16.563rem;
+  height: 16rem;
 }
 
 .main__fareje-content__right p {
@@ -343,6 +348,12 @@ input:checked+.slider:before {
 
 .main__fareje-content__right p strong {
   font-weight: bold;
+}
+
+
+.main__fareje-content {
+  display: flex;
+  gap: 64px;
 }
 
 .divider {
@@ -358,32 +369,22 @@ input:checked+.slider:before {
 .divider div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
-.divider-content {
-
-  gap: 4.270833333333333vw;
-
-
-}
-
-.Jumpdog-div {
-  margin: 0 4.270833333333333vw;
-  padding-left: 1rem;
-
-}
-
-.Jumpdog-img {
-  height: 203px;
-}
-
 
 .patinha-img {
-  height: 4rem;
+  max-height: 4rem;
+  height: 100%;
+}
+
+.dog-img {
+  height: 50%;
+  max-height: 200px;
 }
 
 .linha {
-  width: 13.229166666666666vw;
+  width: 100vw;
+  max-width: 254px;
   border-bottom: 2px solid #ffffff;
 }
 
@@ -417,7 +418,7 @@ footer {
   margin-right: 10px;
 }
 
-.logo{
+.logo {
   margin-bottom: 20px;
 }
 
@@ -438,7 +439,7 @@ footer {
 
 .formulario {
   width: 100%;
-  padding: 0;
+  padding: 64px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -511,7 +512,7 @@ form .botao-enviar input {
   box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
-div h3 {
+div label {
   color: #FFF;
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
@@ -519,6 +520,7 @@ div h3 {
   margin: 0;
   padding: 0;
 }
+
 /* Footer de iago.com */
 
 /* Media Query Mobile */
@@ -533,6 +535,10 @@ div h3 {
     display: none;
   }
 
+  .max-w {
+    padding: 32px;
+  }
+
   .main__sobre-nos {
     display: flex;
     flex-direction: column;
@@ -542,75 +548,61 @@ div h3 {
     gap: 64px;
   }
 
-  .main__sobre-nos__txt h1{
+  .main__sobre-nos__txt h1 {
     display: none;
   }
 
-  .sn-mobile{
+  .sn-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 13px;
   }
-  
-  .sn-img-desk{
+
+  .sn-img-desk {
     display: none;
   }
 
-  .sn-mobile-title{
+  .sn-mobile-title {
     display: flex;
     flex-direction: column;
   }
 
-  .sn-mobile-title h1{
+  .sn-mobile-title h1 {
     margin: 0%;
     font-weight: bold;
   }
 
-  .claw-sn{
+  .claw-sn {
     width: 50%;
     height: 50%;
   }
 
-  .main__fareje-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  .map-w {
+    width: 512px;
   }
 
-  .main__fareje-content___maps{
-    width: 90.975348338692392vw;
-    height: 23.375rem;
-  }
-  
-  .main_faixada{
+  .main_faixada {
     display: none;
   }
 
-    /* FOOOTER*/
-    .rodape {
-      display: flex;
-      flex-direction:column-reverse;
-    }
-  
-    .cotato-info h2 img {
-      display: inline-block;
-    }
-  
-    
-  
+  /* FOOOTER*/
+  .rodape {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cotato-info h2 img {
+    display: inline-block;
+  }
+
   .cotato-info {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  
-    }
-  
-   /* FOOOTER*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  /* FOOOTER*/
 
 }
-
-
-
