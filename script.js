@@ -24,3 +24,35 @@ window.addEventListener('resize', function () {
 });
 
 //SideBar
+
+// Send Email
+const Inputname = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+var enviar = document.getElementsByClassName('form-contact')[0];
+
+enviar.addEventListener('submit', (e)=>{
+  e.preventDefault();
+
+  let conteudoEmail = `
+  <b>Nome: </b> ${Inputname.value}&nbsp;
+  <br>
+  <b>Email: </b> ${email.value}
+  <br>
+  <b>Mensagem: </b> ${message.value}
+  <br>
+  `
+    Email.send({
+      SecureToken : "6b9f2de2-f93f-4b10-ae44-09f96f22417b",
+      To : 'doggosbrasil@hotmail.com',
+      From : "doggosbrasil@hotmail.com",
+      Subject : "Nova Mensagem " + email.value,
+      Body : conteudoEmail
+    }).then(
+    alert("Sua Mensagem foi encaminhada com Sucesso!!!"), 
+    );
+    enviar.reset();
+}) 
+
+// Send Email
