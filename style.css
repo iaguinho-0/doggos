@@ -14,6 +14,10 @@
   --light-bg: #FFFBF5;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background: var(--light-bg);
@@ -419,8 +423,8 @@ footer {
 }
 
 .logo {
-  margin-bottom: 20px;
-}
+  margin-right: 0 !important;
+} 
 
 .cotato-info h2 {
   margin: 19px 0;
@@ -434,11 +438,12 @@ footer {
 
 
 .cotato-info h2 img {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .formulario {
   width: 100%;
+  max-width: 700px;
   padding: 64px 0;
   display: flex;
   flex-direction: column;
@@ -454,15 +459,17 @@ footer {
 
 .formulario input,
 .formulario textarea {
-  width: 550px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 3px;
   background: #EDF5F4;
   box-shadow: 0px -1px 0px 0px #484747 inset;
 }
 
 form {
+  width: 100%;
   max-width: 700px;
-  margin: 10px 40px;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -471,8 +478,8 @@ form {
 form input,
 form textarea {
   display: flex;
-  width: 620px;
-  padding: 12px 222px 13px 12px;
+  width: 100%;
+  padding: 13px 12px 13px 12px;
   align-items: center;
 
   background-color: #ffffff;
@@ -491,7 +498,7 @@ form .botao-enviar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -521,7 +528,7 @@ div label {
   padding: 0;
 }
 
-/* Footer de iago.com */
+/* Fim Footer de iago.com */
 
 /* Media Query Mobile */
 
@@ -592,16 +599,32 @@ div label {
     flex-direction: column-reverse;
   }
 
+.cotato-info h2{
+  font-size: 100%
+}
+
   .cotato-info h2 img {
-    display: inline-block;
+    width: 11%;
   }
+  
+  .logo {
+   width: 30%; 
+  } 
 
   .cotato-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
   }
+
+  .cotato-info.copyright{
+    text-align: start !important;
+  }
+
+  .formulario{
+    padding: 40px 0;
+  }
+
 
   /* FOOOTER*/
 
