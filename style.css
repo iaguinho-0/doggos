@@ -585,10 +585,17 @@ div label {
     height: 50%;
   }
 
-  .map-w {
-    width: 512px;
+  .main__fareje-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
+  .main__fareje-content___maps{
+    width: 90.975348338692392vw;
+    height: 46vh;
+  }
   .main_faixada {
     display: none;
   }
