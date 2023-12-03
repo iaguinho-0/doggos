@@ -1,26 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Inter&display=swap');
 
+:root {
+  --primary-colors: #BC85DA;
+  --secondary-colors: #CC9AE8;
+  --tertiary-color: #7820A7;
+  --text-colors-b: #000000;
+  --text-colors-w: #ffffff;
+  --background: #FFFBF5;
+  --img-theme: url(./assets/sun.svg)
+}
+
+[data-theme="dark"] {
+  --primary-colors: #52057B;
+  --secondary-colors: #7820A7;
+  --tertiary-color: #CC9AE8;
+  --text-colors-b: #ffffff;
+  --background: #180D29;
+  --img-theme: url(./assets/moon.svg)
+}
+
 * {
   margin: 0;
   padding: 0;
-
-  --dark-primary-colors: #52057B;
-  --dark-secondary-colors: #7820A7;
-  --dark-text-colors: #FFFBF5;
-  --dark-bg: #180D29;
-  --light-primary-colors: #BC85DA;
-  --light-secondary-colors: #CC9AE8;
-  --light-text-colors: #000000;
-  --light-bg: #FFFBF5;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
-  background: var(--light-bg);
+  background: var(--background);
 }
 
 p,
@@ -34,7 +44,7 @@ h1 {
 
 a {
   text-decoration: none !important;
-  color: var(--dark-text-colors) !important;
+  color: var(--text-colors-w) !important;
 }
 
 
@@ -52,11 +62,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-
-.content-sn img {}
-
-.content-sn h1,
-.content-sn p {}
 
 .content-sn div {
   display: flex;
@@ -76,7 +81,7 @@ a {
 }
 
 .carousel-inner {
-  background-color: var(--light-secondary-colors);
+  background-color: var(--secondary-colors);
 }
 
 .carousel-item {
@@ -94,11 +99,11 @@ a {
 }
 
 .carousel-indicators .active {
-  background: var(--light-primary-colors) !important;
+  background: var(--tertiary-color) !important;
 }
 
 .dots {
-  background: var(--light-text-colors) !important;
+  background: var(--text-colors-b) !important;
   width: 8px !important;
   height: 8px !important;
   margin-right: 18px !important;
@@ -125,7 +130,7 @@ a {
   top: 0;
   position: fixed;
   z-index: 50;
-  background-color: var(--light-primary-colors);
+  background-color: var(--primary-colors);
 }
 
 .top-bar div {
@@ -147,12 +152,17 @@ a {
 .side-bar {
   width: 100%;
   margin-top: 64px;
-  background: #00000070;
+  background: #00000090;
   position: fixed;
   display: none;
   justify-content: flex-end;
   z-index: 100;
   top: 0;
+}
+
+.side-bar div a:nth-child(2) {
+  border-top: solid #fff 1px;
+  border-bottom: solid #fff 1px;
 }
 
 .show-sidebar {
@@ -163,19 +173,18 @@ a {
   width: 86%;
   height: 100%;
   height: 9999px;
-  background-color: var(--light-primary-colors);
+  background-color: var(--primary-colors);
 }
 
 .w-sb a {
   width: 100% !important;
   height: 70px !important;
   display: flex;
-  border: #000000;
 }
 
 .w-sb a p,
 .w-sb a img {
-  height: 20px;
+  height: 24px;
   margin: 24px 0px 24px 24px;
 }
 
@@ -189,7 +198,7 @@ button:focus {
   list-style: none;
   gap: 82px;
   margin: 0px;
-  color: var(--dark-text-colors);
+  color: var(--text-colors-w);
 }
 
 .top-bar li {
@@ -232,16 +241,11 @@ button:focus {
   border-radius: 20px;
   left: 0.2em;
   bottom: 0.2em;
-  background-color: var(--light-primary-colors);
-  background-image: url(./assets/sun.svg);
+  background-color: var(--primary-colors);
+  background-image: var(--img-theme);
   background-repeat: no-repeat;
   background-position: center;
   transition: .4s;
-}
-
-input:checked+.slider::before {
-  background-color: var(--dark-primary-colors);
-  background-image: url(./assets/moon.svg);
 }
 
 input:checked+.slider:before {
@@ -257,7 +261,7 @@ input:checked+.slider:before {
 
 /*  */
 .main {
-  background-color: var(--light-bg);
+  background-color: var(--background);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -283,8 +287,7 @@ input:checked+.slider:before {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 80%;
-  gap: 31px;
+  gap: 32px;
 }
 
 .main__sobre-nos__txt h1 {
@@ -305,13 +308,18 @@ input:checked+.slider:before {
   margin: 0%;
 }
 
+.main__sobre-nos__txt p,
+.main__sobre-nos__txt h1 {
+  color: var(--text-colors-b);
+}
+
 .main__fareje {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 
-  background-color: var(--light-bg)
+  background-color: var(--background)
 }
 
 .main__fareje h1 {
@@ -319,7 +327,7 @@ input:checked+.slider:before {
   font-weight: 700;
   text-align: center;
 
-  color: #000000;
+  color: var(--text-colors-b);
 
 
   padding-bottom: 64px;
@@ -336,6 +344,10 @@ input:checked+.slider:before {
   align-items: flex-start;
   justify-content: space-between;
   gap: 12px
+}
+
+.main__fareje-content__right p {
+  color: var(--text-colors-b);
 }
 
 .main__fareje-content__right img {
@@ -360,7 +372,7 @@ input:checked+.slider:before {
   gap: 64px;
 }
 
-/* Divider */ 
+/* Divider */
 
 .divider {
   width: 100%;
@@ -368,7 +380,7 @@ input:checked+.slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--light-secondary-colors);
+  background-color: var(--secondary-colors);
 
 }
 
@@ -397,7 +409,7 @@ input:checked+.slider:before {
 /* Footer de iago.com */
 
 footer {
-  background-color: #CC9AE8;
+  background-color: var(--secondary-colors);
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -426,7 +438,7 @@ footer {
 
 .logo {
   margin-right: 0 !important;
-} 
+}
 
 .cotato-info h2 {
   margin: 19px 0;
@@ -517,7 +529,7 @@ form .botao-enviar input {
   transition: .2s;
 
   border-radius: 2px;
-  background: #52057B;
+  background: var(--tertiary-color);
   box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -575,6 +587,11 @@ div label {
   .sn-mobile-title {
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .sn-mobile-title h1 {
+    color: var(--text-colors-b);
   }
 
   .sn-mobile-title h1 {
@@ -583,30 +600,33 @@ div label {
   }
 
   .claw-sn {
-    width: 50%;
-    height: 50%;
+    width: 36px !important;
+    height: 36px !important;
+    position: absolute;
+    right: -2px;
+    bottom: 8px;
   }
 
- /* Divider */
- .divider{
-  height: 30vw;
-}
+  /* Divider */
+  .divider {
+    height: 30vw;
+  }
 
-.patinha-img{
-  width: 6vw !important;
-}
+  .patinha-img {
+    width: 6vw !important;
+  }
 
-.dog-img{
-  width: 25vw !important;
-}
+  .dog-img {
+    width: 25vw !important;
+  }
 
-.linha{
-  height: 1vw !important;
-  width: 50% !important;
-  margin: 0 3vw !important;
-}
+  .linha {
+    height: 1vw !important;
+    width: 50% !important;
+    margin: 0 3vw !important;
+  }
 
-/* Divider END*
+  /* Divider END*
 
 
   /* FAREJENOS */
@@ -617,14 +637,16 @@ div label {
     align-items: center;
   }
 
-  .main__fareje-content___maps{
+  .main__fareje-content___maps {
     width: 90.975348338692392vw;
     height: 46vh;
   }
+
   .main_faixada {
     display: none;
   }
-/* FAREJENOS END*/
+
+  /* FAREJENOS END*/
 
 
   /* FOOOTER*/
@@ -633,17 +655,17 @@ div label {
     flex-direction: column-reverse;
   }
 
-.cotato-info h2{
-  font-size: 100%
-}
+  .cotato-info h2 {
+    font-size: 100%
+  }
 
   .cotato-info h2 img {
     width: 11%;
   }
-  
+
   .logo {
-   width: 30%; 
-  } 
+    width: 30%;
+  }
 
   .cotato-info {
     display: flex;
@@ -651,11 +673,9 @@ div label {
     justify-content: space-between;
   }
 
-  .cotato-info.copyright{
-  
-  }
+  .cotato-info.copyright {}
 
-  .formulario{
+  .formulario {
     padding: 40px 0;
   }
 
@@ -665,33 +685,32 @@ div label {
 }
 
 @media (max-width: 400px) {
-/*FOOTER*/
-.cotato-info{
-  text-align: center !important;
-}
 
-.cotato-info h2{
-  font-size: 100%;
-}
+  /*FOOTER*/
+  .cotato-info {
+    text-align: center !important;
+  }
 
-.cotato-info h2 img {
-  width: 7%;
-}
+  .cotato-info h2 {
+    font-size: 100%;
+  }
 
-.logo {
- width: 50%; 
-  margin: 0 auto !important;
-} 
+  .cotato-info h2 img {
+    width: 7%;
+  }
 
-.cotato-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .logo {
+    width: 50%;
+    margin: 0 auto !important;
+  }
 
-.cotato-info.copyright{
+  .cotato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-}
+  .cotato-info.copyright {}
 
-/*FOOTER END*/
+  /*FOOTER END*/
 }

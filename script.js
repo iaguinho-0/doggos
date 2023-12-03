@@ -32,7 +32,7 @@ const message = document.getElementById('message');
 
 var enviar = document.getElementsByClassName('form-contact')[0];
 
-enviar.addEventListener('submit', (e)=>{
+enviar.addEventListener('submit', (e) => {
   e.preventDefault();
 
   let conteudoEmail = `
@@ -43,16 +43,36 @@ enviar.addEventListener('submit', (e)=>{
   <b>Mensagem: </b> ${message.value}
   <br>
   `
-    Email.send({
-      SecureToken : "6b9f2de2-f93f-4b10-ae44-09f96f22417b",
-      To : 'doggosbrasil@hotmail.com',
-      From : "doggosbrasil@hotmail.com",
-      Subject : "Nova Mensagem " + email.value,
-      Body : conteudoEmail
-    }).then(
-    alert("Sua Mensagem foi encaminhada com Sucesso!!!"), 
-    );
-    enviar.reset();
-}) 
+  Email.send({
+    SecureToken: "6b9f2de2-f93f-4b10-ae44-09f96f22417b",
+    To: 'doggosbrasil@hotmail.com',
+    From: "doggosbrasil@hotmail.com",
+    Subject: "Nova Mensagem " + email.value,
+    Body: conteudoEmail
+  }).then(
+    alert("Sua Mensagem foi encaminhada com Sucesso!!!"),
+  );
+  enviar.reset();
+})
 
 // Send Email
+
+// Trocar tema
+const checkBoxTheme = document.getElementById("checkbox")
+const themeSystem = localStorage.getItem("themeSystem") || "light"
+
+checkBoxTheme.addEventListener('click', () => {
+  let oldTheme = localStorage.getItem("themeSystem") || "light"
+  let newTheme = oldTheme == "light" ? "dark" : "light"
+
+  localStorage.setItem("themeSystem", newTheme)
+  defineCurrentTheme(newTheme)
+})
+
+
+function defineCurrentTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme)
+}
+
+defineCurrentTheme(themeSystem)
+// Trocar tema
