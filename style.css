@@ -291,7 +291,7 @@ input:checked+.slider:before {
 
 .main__sobre-nos__txt h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin: 0%;
 }
 
@@ -335,6 +335,7 @@ input:checked+.slider:before {
 .main__fareje-content___maps {
   min-width: 50%;
   border: none;
+  border-radius: 34px;
 }
 
 .main__fareje-content__right {
@@ -559,6 +560,10 @@ div label {
     padding: 32px;
   }
 
+  .main__sobre-nos{
+    margin: 96px 0 !important;
+  }
+
   .main__sobre-nos {
     display: flex;
     flex-direction: column;
@@ -572,11 +577,25 @@ div label {
     display: none;
   }
 
+  .main__sobre-nos__txt p{
+    font-size: 1rem;
+    text-align: center;
+  }
+
   .sn-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     gap: 13px;
+  }
+
+  .cachorro-sn-mobile768{
+    width: 90vw !important;
+  }
+
+  .cachorro-sn-mobile480{
+    display: none;
   }
 
   .sn-img-desk {
@@ -585,7 +604,7 @@ div label {
 
   .sn-mobile-title {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
   }
 
@@ -594,16 +613,13 @@ div label {
   }
 
   .sn-mobile-title h1 {
+    font-size: 2rem;
     margin: 0%;
     font-weight: bold;
   }
 
   .claw-sn {
-    width: 36px !important;
-    height: 36px !important;
-    position: absolute;
-    right: -2px;
-    bottom: 8px;
+    display: none;
   }
 
   /* Divider */
@@ -645,6 +661,14 @@ div label {
     display: none;
   }
 
+  .main__fareje h1{
+    font-size: 2rem;
+  }
+
+  .main__fareje-content__right p{
+    font-size: 1.0rem;
+  }
+
   /* FAREJENOS END*/
 
 
@@ -683,9 +707,81 @@ div label {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+
+  .max-w {
+    padding: 20px;
+  }
+
+  /* SOBRE NÓS */
+    .main__sobre-nos{
+      margin: 64px 0 !important;
+    }
+
+    .sn-mobile{
+      flex-direction: row;
+    }
+
+    .sn-mobile h1{
+      font-size: 1.8rem;
+    }
+
+    .cachorro-sn-mobile480{
+      display: flex;
+      min-width: 90px;
+    }
+
+    .cachorro-sn-mobile768{
+      display: none;
+    }
+
+    .main__sobre-nos__txt p{
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+
+    .sn-mobile-title {
+      display: flex;
+      flex-direction: column;
+    } 
+
+    .claw-sn {
+      width: 45% !important;
+      height: 45% !important;
+      position: absolute;
+      right: -3%;
+      bottom: 5%;
+      display: flex;
+    }
+  
+  /* SOBRE NÓS END */
+
+  /* DIVIDER */
+
+
+  /* DIVIDER END */
+
+  /* FAREJE-NOS */
+  .main__fareje h1{
+    font-size: 1.6rem;
+    padding-bottom: 34px;
+  }
+
+  .main__fareje-content__right p{
+    font-size: 0.8rem;
+  }
+
+  .main__fareje-content___maps {
+    height: 36vh;
+  }
+  
+  /* FAREJE-NOS END */
 
   /*FOOTER*/
+  .formulario h1{
+    font-size: 1.4rem;
+  }
+
   .cotato-info {
     text-align: center !important;
   }
@@ -696,17 +792,20 @@ div label {
 
   .cotato-info h2 img {
     width: 7%;
+    min-width: 15px;
+    max-width: 30px;
   }
 
   .logo {
     width: 50%;
     margin: 0 auto !important;
+    min-width: 82px;
+    max-width: 179px;
   }
 
   .cotato-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .cotato-info.copyright {}
