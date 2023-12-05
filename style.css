@@ -160,8 +160,19 @@ a {
   top: 0;
 }
 
-.side-bar div a:nth-child(2) {
-  border-top: solid #fff 1px;
+.img-theme {
+  width: 20px;
+  height: 20px;
+  background-image: var(--img-theme);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 24px 0px 24px 24px;
+}
+
+.side-bar div a:nth-child(1),
+.side-bar div a:nth-child(2),
+.side-bar div a:nth-child(3) {
   border-bottom: solid #fff 1px;
 }
 
@@ -560,7 +571,7 @@ div label {
     padding: 32px;
   }
 
-  .main__sobre-nos{
+  .main__sobre-nos {
     margin: 96px 0 !important;
   }
 
@@ -577,7 +588,7 @@ div label {
     display: none;
   }
 
-  .main__sobre-nos__txt p{
+  .main__sobre-nos__txt p {
     font-size: 1rem;
     text-align: center;
   }
@@ -590,11 +601,11 @@ div label {
     gap: 13px;
   }
 
-  .cachorro-sn-mobile768{
+  .cachorro-sn-mobile768 {
     width: 90vw !important;
   }
 
-  .cachorro-sn-mobile480{
+  .cachorro-sn-mobile480 {
     display: none;
   }
 
@@ -661,11 +672,11 @@ div label {
     display: none;
   }
 
-  .main__fareje h1{
+  .main__fareje h1 {
     font-size: 2rem;
   }
 
-  .main__fareje-content__right p{
+  .main__fareje-content__right p {
     font-size: 1.0rem;
   }
 
@@ -714,46 +725,46 @@ div label {
   }
 
   /* SOBRE NÓS */
-    .main__sobre-nos{
-      margin: 64px 0 !important;
-    }
+  .main__sobre-nos {
+    margin: 64px 0 !important;
+  }
 
-    .sn-mobile{
-      flex-direction: row;
-    }
+  .sn-mobile {
+    flex-direction: row;
+  }
 
-    .sn-mobile h1{
-      font-size: 1.8rem;
-    }
+  .sn-mobile h1 {
+    font-size: 1.8rem;
+  }
 
-    .cachorro-sn-mobile480{
-      display: flex;
-      min-width: 90px;
-    }
+  .cachorro-sn-mobile480 {
+    display: flex;
+    min-width: 90px;
+  }
 
-    .cachorro-sn-mobile768{
-      display: none;
-    }
+  .cachorro-sn-mobile768 {
+    display: none;
+  }
 
-    .main__sobre-nos__txt p{
-      font-size: 0.8rem;
-      text-align: justify;
-    }
+  .main__sobre-nos__txt p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
 
-    .sn-mobile-title {
-      display: flex;
-      flex-direction: column;
-    } 
+  .sn-mobile-title {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .claw-sn {
-      width: 45% !important;
-      height: 45% !important;
-      position: absolute;
-      right: -3%;
-      bottom: 5%;
-      display: flex;
-    }
-  
+  .claw-sn {
+    width: 45% !important;
+    height: 45% !important;
+    position: absolute;
+    right: -3%;
+    bottom: 5%;
+    display: flex;
+  }
+
   /* SOBRE NÓS END */
 
   /* DIVIDER */
@@ -762,23 +773,23 @@ div label {
   /* DIVIDER END */
 
   /* FAREJE-NOS */
-  .main__fareje h1{
+  .main__fareje h1 {
     font-size: 1.6rem;
     padding-bottom: 34px;
   }
 
-  .main__fareje-content__right p{
+  .main__fareje-content__right p {
     font-size: 0.8rem;
   }
 
   .main__fareje-content___maps {
     height: 36vh;
   }
-  
+
   /* FAREJE-NOS END */
 
   /*FOOTER*/
-  .formulario h1{
+  .formulario h1 {
     font-size: 1.4rem;
   }
 
