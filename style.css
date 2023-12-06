@@ -330,6 +330,7 @@ input:checked+.slider:before {
   margin: 0%;
 }
 
+/* SERVISO */
 .main__service{
   display: flex;
   flex-direction: column;
@@ -355,8 +356,13 @@ input:checked+.slider:before {
   flex-direction: row;
   align-content:center ;
   justify-content: center;
-  height: 276px;
+  height: 25vw;
+  max-height: 276px;
 
+}
+
+.carousel__imgs{
+  min-height: 100%;
 }
 
 .swiper{
@@ -364,7 +370,12 @@ input:checked+.slider:before {
   background: linear-gradient(to bottom, var(--tertiary-color), var(--primary-colors), var(--secondary-colors)) !important;
   border-radius: 2.8rem;
   max-width: 1043px;
-  width: 100%;
+  width: 90vw !important;
+}
+
+.swiper-wrapper{
+  width: 90vw !important;
+  min-width: 1060px;
 }
 
 .swiper-slide {
@@ -651,6 +662,14 @@ div label {
 /* Media Query Mobile */
 
 @media (max-width: 768px) {
+
+  #sobrenos,
+  #servicos,
+  #farejenos {
+  margin-top: 64px;
+  margin-bottom: 16px !important;
+}
+
   .top-bar button {
     display: block;
   }
@@ -665,7 +684,7 @@ div label {
   }
 
   .main__sobre-nos {
-    margin: 96px 0 !important;
+    margin-bottom: 0;
   }
 
   .main__sobre-nos {
@@ -724,6 +743,22 @@ div label {
 
   .claw-sn {
     display: none;
+  }
+
+  .main__service{
+    padding-bottom: 72px;
+  }
+
+  .swiper-button-prev{
+    display: none !important;
+  }
+  
+  .swiper-button-next{
+    display: none !important;
+  }
+
+  .h1__service__txt{
+    font-size: 1.5rem;
   }
 
   /* Divider */
@@ -866,6 +901,12 @@ div label {
   }
 
   /* SOBRE NÓS END */
+
+  .swiper{
+  
+    border-radius: 29px;
+  }
+
 
   /* DIVIDER */
 
