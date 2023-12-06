@@ -25,6 +25,20 @@ window.addEventListener('resize', function () {
 
 //SideBar
 
+//Serviços 
+var swiper = new Swiper(".swiper", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  keyboard: true,
+});
+
 // Send Email
 const Inputname = document.getElementById('name');
 const email = document.getElementById('email');

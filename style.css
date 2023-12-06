@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Inter&display=swap');
 
 :root {
+  --aux-color: #d7bee6;
   --primary-colors: #BC85DA;
   --secondary-colors: #CC9AE8;
   --tertiary-color: #7820A7;
@@ -327,6 +328,71 @@ input:checked+.slider:before {
   font-weight: bold;
   font-size: 2.5rem;
   margin: 0%;
+}
+
+.main__service{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-content:center ;
+  justify-content: center;
+  padding-bottom: 128px;
+}
+
+.h1__service__txt{
+  display: flex;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0%;
+  align-self: center;
+  color: var(--text-colors-b);
+}
+
+
+.carousel__body{
+  display: flex;
+  flex-direction: row;
+  align-content:center ;
+  justify-content: center;
+  height: 276px;
+
+}
+
+.swiper{
+  display: flex;
+  background: linear-gradient(to bottom, var(--tertiary-color), var(--primary-colors), var(--secondary-colors)) !important;
+  border-radius: 2.8rem;
+  max-width: 1043px;
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination{
+  color: var(--text-colors-b) !important;
+}
+
+.swiper-button-prev{
+  display: flex;
+  color: var(--text-colors-b) !important;
+  right: 100px;
+}
+
+.swiper-button-next{
+  display: flex;
+  color: var(--text-colors-b)!important;
+}
+
+@media (max-width: auto) {
+  .swiper {
+    height: 270px;
+  }
 }
 
 .sn-mobile {
