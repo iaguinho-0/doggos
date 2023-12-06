@@ -389,6 +389,10 @@ input:checked+.slider:before {
   color: var(--text-colors-b)!important;
 }
 
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: var(--tertiary-color)!important;
+}
+
 @media (max-width: auto) {
   .swiper {
     height: 270px;
