@@ -745,6 +745,9 @@ div label {
     display: none;
   }
 
+  #servicos{
+    margin-bottom: 32px !important;
+  }
   .main__service{
     padding-bottom: 72px;
   }
