@@ -7,7 +7,9 @@
   --text-colors-b: #000000;
   --text-colors-w: #ffffff;
   --background: #FFFBF5;
-  --img-theme: url(./assets/sun.svg)
+  --img-theme: url(./assets/sun.svg);
+  --pl: block;
+  --pd: none;
 }
 
 [data-theme="dark"] {
@@ -16,7 +18,28 @@
   --tertiary-color: #CC9AE8;
   --text-colors-b: #ffffff;
   --background: #180D29;
-  --img-theme: url(./assets/moon.svg)
+  --img-theme: url(./assets/moon.svg);
+  --pl: none;
+  --pd: block;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background);
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-colors);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(--background);
+  /* creates padding around scroll thumb */
 }
 
 * {
@@ -756,13 +779,20 @@ div label {
     flex-direction: column;
   }
 
+  .pata-light {
+    display: var(--pl);
+  }
+
+  .pata-dark {
+    display: var(--pd);
+  }
+
   .claw-sn {
-    width: 45% !important;
-    height: 45% !important;
+    width: 40% !important;
+    height: 40% !important;
     position: absolute;
-    right: -3%;
-    bottom: 5%;
-    display: flex;
+    right: -10px;
+    bottom: 4px;
   }
 
   /* SOBRE NÓS END */
