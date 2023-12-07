@@ -98,3 +98,4 @@ function defineCurrentTheme(theme) {
 
 defineCurrentTheme(themeSystem)
 // Trocar tema
+
